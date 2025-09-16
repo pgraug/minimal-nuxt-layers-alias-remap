@@ -1,23 +1,16 @@
-# Nuxt Minimal Starter
+# Nuxt Layers Aliases Not Working
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a minimal reproduction of a Nuxt 4 app (in sites/dk/) that extends a Nuxt layer (in the root of this repo) and tries to change the aliases so ~/ and ~~/ point to the layer's directory not the dir of the app that extends it (the one that runs when you start the dev server).
+
+It works for import statements but not for `<img src="~/assets/some-image.png">` which doesn't respect the alias change and still points to `sites/dk/assets/some-image.png`.
 
 ## Setup
 
 Make sure to install dependencies:
 
 ```bash
-# npm
-npm install
-
 # pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -25,51 +18,6 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
 # pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

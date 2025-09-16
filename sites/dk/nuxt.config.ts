@@ -7,4 +7,14 @@ export default defineNuxtConfig({
     "~site": fileURLToPath(new URL("./app", import.meta.url)),
     "~~site": fileURLToPath(new URL(".", import.meta.url)),
   },
+
+  // This didn't seem to have any effect
+  // vite: {
+  //   resolve: {
+  //     alias: {
+  //       "~site": fileURLToPath(new URL("./app", import.meta.url)),
+  //       "~~site": fileURLToPath(new URL(".", import.meta.url)),
+  //     },
+  //   },
+  // },
 });

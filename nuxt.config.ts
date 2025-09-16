@@ -8,6 +8,16 @@ export default defineNuxtConfig({
     "~~": fileURLToPath(new URL(".", import.meta.url)),
   },
 
+  // This didn't seem to have any effect
+  // vite: {
+  //   resolve: {
+  //     alias: {
+  //       "~": fileURLToPath(new URL("./app", import.meta.url)),
+  //       "~~": fileURLToPath(new URL(".", import.meta.url)),
+  //     },
+  //   },
+  // },
+
   // This import works as intended
   css: ["~/assets/main.css"],
 });
