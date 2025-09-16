@@ -1,4 +1,4 @@
-# Nuxt Layers Aliases Not Respected in some scenarios
+# Nuxt layers aliases not respected in some scenarios
 
 This is a minimal reproduction of a Nuxt 4 app (in sites/dk/) that extends a Nuxt layer (in the root of this repo) and tries to change the aliases so `~/` and `~~/` point to the layer's directory not the dir of the app that extends it (the one that runs when you start the dev server).
 
